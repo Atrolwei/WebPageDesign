@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <title>彩色文字重叠</title>
+    <head>
+        <style type="text/css">
+        p{
+            position: relative;
+        }
+        div{
+            font-size: xx-large;
+        }
+        div.red{
+            color:red;
+            position: absolute;
+            top:2px;
+            left: 2px;
+        }
+        div.green{
+            color:green;
+            position: absolute;
+            top:4px;
+            left: 4px;
+        }
+        div.blue{
+            color:blue;
+            position: absolute;
+            top:6px;
+            left: 6px;
+        }
+        </style>
+    </head>
+    <body>
+        <p>
+        <div class="red">春天来了</div>
+        <div class="green">春天来了</div>
+        <div class="blue" onclick="alert(1)">春天来了</div>
+        </p>
+    </body>
+</html>
